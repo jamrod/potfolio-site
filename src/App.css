@@ -110,6 +110,19 @@ a:hover {
   padding: 5px;
   text-align: left;
 }
-/* .foot {
-  
-} */
+.scales {
+  max-width: 200px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.scale-results {
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

@@ -47,26 +47,28 @@ class ScaleFinder extends Component {
         let root = this.state.root
         let scale = this.state.scale
         return (
-            <div id="scaleFinder" onKeyDown={(e) => this.keyPressed(e)}>
+            <div className="scale-finder" onKeyDown={(e) => this.keyPressed(e)}>
 
                 <input ref={(input) => { this.input = input }} type="text" id="name" value={this.state.input} onChange={(e) => { this.getInput(e.target.value) }} /><span id="label"> Enter Note </span>
                 <br></br>
                 <input type="button" id="complete" value="Get Scale" onClick={(e) => { this.getScale() }}></input>
-
-                <table id="majorTriad" class="scales">
-                    <tr><th>Major Triad</th><th>Note</th></tr>
-                    <tr class="scaleRow"><td>1st</td><td class="root">{scale[root]} </td></tr>
-                    <tr class="scaleRow"><td>3rd</td><td class="3rd">{scale[root + 4]} </td></tr>
-                    <tr class="scaleRow"><td>5th</td><td class="5th">{scale[root + 6]} </td></tr>
-                </table>
-
-                <table id="minorTriad" class="scales">
-                    <tr> <th>Minor Triad</th> <th>Note</th></tr>
-                    <tr class="scaleRow"><td>1st</td><td class="root">{scale[root]} </td></tr>
-                    <tr class="scaleRow"><td>3 Flat</td><td class="3Flat">{scale[root + 3]} </td></tr>
-                    <tr class="scaleRow"><td>5th</td><td class="5th">{scale[root + 4]} </td></tr>
-                </table>
-            </div>
+                <br></br>
+                <div className="scale-results flex-container-column">
+                    <div id="majorTriad" className="scales flex-container-column">
+                        <div className="table-row"><span>Major Triad</span><span>   </span><span>Note</span></div>
+                        <div className="table-row "><div>1st</div><div className="root">{scale[root]} </div></div>
+                        <div className="table-row "><div>3rd</div><div className="3rd">{scale[root + 4]} </div></div>
+                        <div className="table-row "><div>5th</div><div className="5th">{scale[root + 6]} </div></div>
+                    </div>
+                    <br></br>
+                    <div id="minorTriad" className="scales flex-container-column">
+                        <div className="table-row "> <span>Minor Triad</span> <span>Note</span></div>
+                        <div className="table-row "><div>1st</div><div className="root">{scale[root]} </div></div>
+                        <div className="table-row "><div>3 Flat</div><div className="3Flat">{scale[root + 3]} </div></div>
+                        <div className="table-row " > <div>5th</div> <div className="5th">{scale[root + 4]} </div></div >
+                    </div >
+                </div>
+            </div >
         )
     }
 }
