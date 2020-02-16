@@ -76,14 +76,15 @@ class WhoGoesFirst extends Component {
     render() {
         return (
             <div onKeyDown={(e) => this.keyPressed(e)}>
-                <h1>Who Goes First?</h1>
+                <h3>Who Goes First?</h3>
+                <p className="content">This is just a little program to determine play order. Can be used with board games or to determine initiative in D&D</p>
                 <p>
 
                     <input ref={(input) => { this.input = input }} type="text" id="name" value={this.state.input} onChange={(e) => { this.getInput(e.target.value) }} /><span id="label"> Enter Name </span>
                     <input type="button" id="add" value="Add Name" onClick={(e) => { this.add() }}></input>
                     <br></br>
                     <input type="button" id="complete" value="Get Player One!" onClick={(e) => { this.runShuffle() }}></input>
-                    <input type="button" id="reset" value="Reset?" onClick={(e) => { this.reset() }}></input>
+                    <input type="button" id="reset" value="Reset" onClick={(e) => { this.reset() }}></input>
 
                 </p>
                 <ol>

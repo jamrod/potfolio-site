@@ -9,7 +9,7 @@ import Music from './Components/Music'
 import Scripts from './Components/Scripts/Scripts'
 import WhoGoesFirst from './Components/WhoGoesFirst/WhoGoesFirst'
 import ScaleFinder from './Components/ScaleFinder/ScaleFinder'
-
+import Projects from './Components/Projects'
 
 import './App.css';
 
@@ -22,12 +22,13 @@ function App() {
         <div className="grid">
           <QuickLinks></QuickLinks>
           <div className="viewer">
-            <Route path="/" component={Home} exact></Route>
-            <Route path="/Home/" component={Home} ></Route>
+            <Route path="/" component={Projects} exact></Route>
+            <Route path="/About/" component={Home} ></Route>
             <Route path="/Scripts" component={Scripts}></Route>
             <Route path="/Music" component={Music}></Route>
             <Route path="/WhoGoesFirst/" component={WhoGoesFirst}></Route>
             <Route path="/ScaleFinder/" component={ScaleFinder}></Route>
+            <Route path="/Projects/" component={Projects}></Route>
           </div>
         </div>
 

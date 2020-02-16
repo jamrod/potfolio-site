@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 import '../App.css'
 
 function Nav() {
-    const pages = ["Home", "Projects", "Scripts", "Music"]
+    const pages = { "Projects": "/Projects", "About": "About", "Scripts": "/Scripts", "Music": "/Music" }
+    let pagesArr = Object.keys(pages)
     return (
         <div className="flex-container-row nav">
-            <button><Link className="nav-link" to="/Home">Home</Link></button>
-            <button><Link className="nav-link" to="/Projects">Projects</Link></button>
-            <button><Link className="nav-link" to="/Scripts">Scripts</Link></button>
-            <button><Link className="nav-link" to="/Music">Music</Link></button>
+            {pagesArr.map((page, i) => (
+                <button className="nav-link" key={i}><Link to={pages[page]}>{page}</Link></button>
+            ))}
         </div>
     )
 }

@@ -8,8 +8,10 @@ function Header() {
         <header className="centered">
             <div className="flex-container-column centered">
                 <h1>James C Rodgers</h1>
-                <div className="flex-container-row"><Nav></Nav></div>
+                <span className="mini">jamcrodgers@gmail.com</span>
+                <Nav></Nav>
             </div>
+
         </header>
 
     )
