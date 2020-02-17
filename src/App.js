@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, redirect } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 import Header from './Components/Header'
 import Footer from './Components/Footer'
@@ -31,6 +31,7 @@ function App() {
             <Route path="/Projects/" component={Projects}></Route>
           </div>
         </div>
+
 
       </Switch>
       <Footer></Footer>

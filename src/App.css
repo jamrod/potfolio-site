@@ -129,6 +129,12 @@ a:hover {
 .content {
   padding: 5px;
   text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.attention {
+  color: crimson;
+  font-size: large;
 }
 
 h3 {

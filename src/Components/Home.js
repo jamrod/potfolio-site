@@ -7,12 +7,12 @@ function Home() {
     return (
         <div>
             <div className="flex-container-row content">
-                <div><img src="me.jpg" className="me-pic" />
+                <div><img src="me.jpg" className="me-pic" alt="pic of me" />
                     <p>
                         I am a software engineer who thrives on opportunities to create custom solutions for people. A cool headed problem solver who sees the big picture but keeps an eye on the details. Looking for a chance to turn ‘nothing works!’ into ‘this is exactly what we need!’
                     </p>
                     <p>
-                        The tools and frameworks I work with include React.js and Python Django and platforms like Wordpress, Shopify, Drupal and Jekyll. Also, I have been experimenting with AWS for a few years and decided to get my Certified Cloud Practicioner <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2019-05-13&ci=AWS00887341">certification</a> last year. I have a deep understanding of Web technologies and how the internet works.
+                        The tools and frameworks I work with include <span className="attention">React.js</span> and <span className="attention">Python Django</span> and platforms like <span className="attention">Wordpress, Shopify</span> and <span className="attention">Jekyll</span>. Also, I have been experimenting with <span className="attention">AWS</span> for years and decided to get my<a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2019-05-13&ci=AWS00887341"> Certified Cloud Practicioner certification</a> last year. I have a deep understanding of internet technologies and how the internet works.
                     </p>
                     <p>
                         I have years of experience in tech, including management experience. An expert troubleshooter and problem solver who thrives on challenge. I got a big skills boost by going to General Assembly's Software Engineering Immersive course. Now I'm hoping to combine those new skills with my years of experience in health care, construction and customer service to bring solutions to complex problems.</p>
@@ -23,14 +23,14 @@ function Home() {
 
             </div>
             <div className="flex-container-row space">
-                <img src="./icons/aws.svg" className="badges" />
+                <img src="./icons/aws.svg" className="badges" alt="aws badge" />
                 {/* <img src="/icons/django.svg" className="badges" /> */}
                 {/* <img src="/icons/node.svg" className="badges" /> */}
-                <img src="/icons/python.svg" className="badges" />
+                <img src="/icons/python.svg" className="badges" alt="python badge" />
                 {/* <img src="/icons/react.svg" className="badges" /> */}
-                <img src="/icons/HTML5.svg" className="badges" />
-                <img src="/icons/CSS3.svg" className="badges" />
-                <img src="/icons/javascript.svg" className="badges" />
+                <img src="/icons/HTML5.svg" className="badges" alt="HTML badge" />
+                <img src="/icons/CSS3.svg" className="badges" alt="CSS badge" />
+                <img src="/icons/javascript.svg" className="badges" alt="javascript badge" />
                 {/* <img src="/icons/mongodb.svg" className="badges" /> */}
                 {/* <img src="/icons/psql.svg" className="badges" /> */}
             </div>

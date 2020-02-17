@@ -29,7 +29,7 @@ class WhoGoesFirst extends Component {
 
     keyPressed = (e) => {
         // console.log(e)
-        if (e.key == 'Enter') {
+        if (e.key === 'Enter') {
             this.add()
         }
     }

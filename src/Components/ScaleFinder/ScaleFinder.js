@@ -25,7 +25,7 @@ class ScaleFinder extends Component {
 
     keyPressed = (e) => {
         console.log(e.key)
-        if (e.key == 'Enter') {
+        if (e.key === 'Enter') {
             this.getScale()
         }
     }
