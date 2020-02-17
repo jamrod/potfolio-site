@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 import '../App.css'
 
 function Nav() {
-    const pages = { "Projects": "/Projects", "About": "About", "Scripts": "/Scripts", "Music": "/Music" }
+    const pages = { "Projects": "/Projects", "About": "About" }
+    // const pages = { "Projects": "/Projects", "About": "About", "Scripts": "/Scripts", "Music": "/Music" }
     let pagesArr = Object.keys(pages)
     return (
         <div className="flex-container-row nav">

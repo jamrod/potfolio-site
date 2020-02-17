@@ -6,7 +6,7 @@ import Footer from './Components/Footer'
 import Home from './Components/Home'
 import QuickLinks from './Components/QuickLinks'
 import Music from './Components/Music'
-import Scripts from './Components/Scripts/Scripts'
+// import Scripts from './Components/Scripts/Scripts'
 import WhoGoesFirst from './Components/WhoGoesFirst/WhoGoesFirst'
 import ScaleFinder from './Components/ScaleFinder/ScaleFinder'
 import Projects from './Components/Projects'
@@ -24,7 +24,7 @@ function App() {
           <div className="viewer">
             <Route path="/" component={Projects} exact></Route>
             <Route path="/About/" component={Home} ></Route>
-            <Route path="/Scripts" component={Scripts}></Route>
+            {/* <Route path="/Scripts" component={Scripts}></Route> */}
             <Route path="/Music" component={Music}></Route>
             <Route path="/WhoGoesFirst/" component={WhoGoesFirst}></Route>
             <Route path="/ScaleFinder/" component={ScaleFinder}></Route>

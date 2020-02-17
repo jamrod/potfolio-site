@@ -5,7 +5,8 @@ import ExternalLinks from './ExternalLinks'
 import '../App.css'
 
 function QuickLinks(props) {
-    const projects = { "Who Goes First?": "/WhoGoesFirst", "Scale Finder": "/ScaleFinder", "Scipts": "/Scipts", "Music": "/Music" }
+    const projects = { "Who Goes First?": "/WhoGoesFirst", "Scale Finder": "/ScaleFinder", "Music": "/Music" }
+    // const projects = { "Who Goes First?": "/WhoGoesFirst", "Scale Finder": "/ScaleFinder", "Scipts": "/Scipts", "Music": "/Music" }
     const projectsArr = Object.keys(projects)
     return (
         <div className="flex-container-column project-links" >
