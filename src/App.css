@@ -140,37 +140,6 @@ h3 {
   margin: 2px;
 }
 
-.scales {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 5px;
-  max-width: 200px;
-  outline: 1px solid rgb(66, 53, 53);
-  padding: 2px;
-  margin: 5px;
-}
-
-.scale-results {
-  height: 100%;
-  margin: 0 auto;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.music-table {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 5px;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
 .space {
   justify-content: space-around;
   width: 100%;
@@ -206,10 +175,4 @@ h3 {
 
 .full-width {
   width: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-  .scale-results {
-    flex-direction: column;
-  }
 }
