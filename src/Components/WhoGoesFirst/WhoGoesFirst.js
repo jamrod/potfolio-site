@@ -75,25 +75,29 @@ class WhoGoesFirst extends Component {
 
     render() {
         return (
-            <div onKeyDown={(e) => this.keyPressed(e)}>
-                <h3>Who Goes First?</h3>
-                <p className="content">This is just a little program to determine play order. Can be used with board games or to determine initiative in D&D. Enter all the players names then click 'GetPlayer One!' and it will re-order the list and declare who goes first.</p>
-                <p>
+            <div className="flex-container-column centered">
+                <div onKeyDown={(e) => this.keyPressed(e)} className="article">
+                    <h3>Who Goes First?</h3>
+                    <p className="content">This is just a little program to determine play order. Can be used with board games or to determine initiative in D&D. Enter all the players names then click 'GetPlayer One!' and it will re-order the list and declare who goes first.</p>
+                    <p>
 
-                    <input ref={(input) => { this.input = input }} type="text" id="name" value={this.state.input} onChange={(e) => { this.getInput(e.target.value) }} /><span id="label"> Enter Name </span>
-                    <input type="button" id="add" value="Add Name" onClick={(e) => { this.add() }}></input>
-                    <br></br>
-                    <input type="button" id="complete" value="Get Player One!" onClick={(e) => { this.runShuffle() }}></input>
-                    <input type="button" id="reset" value="Reset" onClick={(e) => { this.reset() }}></input>
+                        <input ref={(input) => { this.input = input }} type="text" id="name" value={this.state.input} onChange={(e) => { this.getInput(e.target.value) }} /><span id="label"> Enter Name </span>
+                        <input type="button" id="add" value="Add Name" onClick={(e) => { this.add() }}></input>
+                        <br></br>
+                        <input type="button" id="complete" value="Get Player One!" onClick={(e) => { this.runShuffle() }}></input>
+                        <input type="button" id="reset" value="Reset" onClick={(e) => { this.reset() }}></input>
 
-                </p>
-                <ol>
-                    {this.state.names.map((name, i) => (
-                        <li key={i}>{name} {this.state.complete && i === 0 ? <span>Goes First!</span> : null} </li>
+                    </p>
+                    <div className="flex-container-column centered">
+                        <ol>
+                            {this.state.names.map((name, i) => (
+                                <li key={i}>{name} {this.state.complete && i === 0 ? <span>Goes First!</span> : null} </li>
 
-                    ))}
-                </ol>
+                            ))}
+                        </ol>
+                    </div>
 
+                </div>
             </div>
         )
     }
