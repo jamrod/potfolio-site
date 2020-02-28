@@ -1,11 +1,21 @@
 import React from 'react'
-
+import { Redirect } from 'react-router-dom'
 import '../App.css'
 
-function Projects() {
+function Projects(props) {
+    const path = props.history.location.pathname
+    console.log(path)
+
+    const checkPath = () => {
+        if (path.includes('/#!/About')) {
+            return <Redirect push to='/About'></Redirect>
+        }
+    }
+
+
     return (
         <div className="projects-container">
-
+            {checkPath()}
             <div className="flex-container-column projects project-space">
 
                 <div className="flex-container-row space">

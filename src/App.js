@@ -12,7 +12,6 @@ import './App.css';
 
 function App() {
 
-
   return (
     <div className="App flex-container-column" styles={{ backgroundImage: `url(milky-way-starry-sky-night-sky-star-956981.jpeg)` }}>
       <div className="container flex-container-column">
