@@ -6,6 +6,7 @@ import Footer from './Components/Footer'
 import Home from './Components/Home'
 import Music from './Components/Music'
 import Projects from './Components/Projects'
+import Nav from './Components/Nav'
 
 import './App.css';
 
@@ -15,7 +16,7 @@ function App() {
     <div className="App flex-container-column" styles={{ backgroundImage: `url(milky-way-starry-sky-night-sky-star-956981.jpeg)` }}>
       <div className="container flex-container-column">
         <Header></Header>
-
+        <Nav></Nav>
         <Switch>
           <Route path="/" component={Projects} exact></Route>
           <Route path="/About/" component={Home} ></Route>

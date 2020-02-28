@@ -17,6 +17,7 @@ class Nav extends Component {
         this.setState({ active: str })
     }
 
+
     render() {
         let pagesArr = Object.keys(this.state.pages)
         return (
