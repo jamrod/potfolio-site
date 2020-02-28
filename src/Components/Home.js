@@ -3,9 +3,6 @@ import React from 'react'
 import '../App.css'
 
 function Home(props) {
-    const path = props.history.location.pathname
-    console.log(path)
-    // props.history.listen((location, action) => console.log('History changed!', location, action));
 
     return (
         <div className="flex-container-column centered">
