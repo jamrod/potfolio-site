@@ -6,7 +6,7 @@ function Projects() {
     return (
         <div className="projects-container">
 
-            <div className="flex-container-column centered projects">
+            <div className="flex-container-column projects project-space">
 
                 <div className="flex-container-row space">
                     <div>

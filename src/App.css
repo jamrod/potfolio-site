@@ -1,3 +1,13 @@
+body {
+  background-color: #bce0f5;
+  background-image: url("https://i.imgur.com/CJmPnX6.png");
+  background-repeat: repeat;
+  background-size: contain;
+  animation-name: scroll;
+  background-position: 0px 0px;
+  animation: scroll 120s linear infinite;
+}
+
 .App {
   min-height: 100%;
   text-align: center;
@@ -8,6 +18,18 @@
 .container {
   align-content: space-between;
   flex: 1 0 auto;
+}
+
+header {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 5px 0;
+  flex-shrink: 0;
+}
+
+header a:hover {
+  color: black;
 }
 
 .article {
@@ -27,6 +49,20 @@
 
 .footer p {
   margin: 1px;
+}
+
+@keyframes scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+h1 {
+  padding: 0;
+  margin: 4px;
 }
 
 .flex-container-row {
@@ -49,46 +85,12 @@
   height: 150px;
 }
 
-body {
-  background-color: #bce0f5;
-  background-image: url("https://i.imgur.com/CJmPnX6.png");
-  background-repeat: repeat;
-  background-size: contain;
-  animation-name: scroll;
-  background-position: 0px 0px;
-  animation: scroll 120s linear infinite;
-}
-
-@keyframes scroll {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
-}
-
 .icons {
   max-width: 25px;
 }
 .badges {
   max-width: 50px;
   max-height: 50px;
-}
-
-header {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 5px 0;
-}
-
-header a:hover {
-  color: black;
-}
-h1 {
-  padding: 0;
-  margin: 4px;
 }
 
 .mini {
@@ -145,6 +147,11 @@ h3 {
   width: 100%;
 }
 
+.project-space {
+  justify-content: space-around;
+  width: 100%;
+}
+
 .content {
   padding: 5px;
   text-align: left;
@@ -164,15 +171,31 @@ h3 {
 .projects {
   width: 100%;
   height: 100%;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .projects-container {
   height: 85vh;
   display: flex;
   flex-direction: column;
-  overflow: auto;
 }
 
 .full-width {
   width: 100%;
+}
+
+@media screen and (max-width: 801px) {
+  .project-space {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects-container {
+    height: 100%;
+  }
+  .article {
+    height: 100%;
+  }
 }
