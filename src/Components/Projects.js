@@ -3,13 +3,14 @@ import { Redirect } from 'react-router-dom'
 import '../App.css'
 
 function Projects(props) {
-    const path = props.history.location
+    const path = props.state.history.location
     console.log(path)
 
     const checkPath = () => {
         if (path.hash) {
             console.log(path.hash)
             if (path.hash.includes('#!/About')) {
+                props.setActive('About')
                 return <Redirect push to='/About'></Redirect>
             }
         }

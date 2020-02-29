@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom'
 
 import Header from './Components/Header'
@@ -10,24 +10,37 @@ import Nav from './Components/Nav'
 
 import './App.css';
 
-function App() {
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      active: 'Projects'
+    }
+  }
 
-  return (
-    <div className="App flex-container-column" styles={{ backgroundImage: `url(milky-way-starry-sky-night-sky-star-956981.jpeg)` }}>
-      <div className="container flex-container-column">
-        <Header></Header>
-        <Nav></Nav>
-        <Switch>
-          <Route path="/" component={Projects} exact></Route>
-          <Route path="/About/" component={Home} ></Route>
-          <Route path="/Music" component={Music}></Route>
-          <Route path="/Projects/" component={Projects}></Route>
-        </Switch>
+  setActive = (str) => {
+    this.setState({ active: str })
+  }
 
+  render() {
+    return (
+      <div className="App flex-container-column" styles={{ backgroundImage: `url(milky-way-starry-sky-night-sky-star-956981.jpeg)` }}>
+        <div className="container flex-container-column">
+          <Header></Header>
+          <Nav active={this.state.active} setActive={this.setActive}></Nav>
+          <Switch>
+            <Route path="/" exact render={props => <Projects setActive={this.setActive} state={props} />} />
+            <Route path="/About/" component={Home} ></Route>
+            <Route path="/Music" component={Music}></Route>
+            <Route path="/Projects/" render={props => <Projects setActive={this.setActive} state={props} />} />
+          </Switch>
+
+        </div>
+        <Footer></Footer>
       </div>
-      <Footer></Footer>
-    </div>
-  );
+    );
+  }
+
 }
 
 export default App;
