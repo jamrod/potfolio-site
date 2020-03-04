@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import '../App.css'
 
-//Hoist setActive function to App, sync local active state to App 
 class Nav extends Component {
     constructor(props) {
         super(props)

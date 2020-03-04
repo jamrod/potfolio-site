@@ -7,7 +7,7 @@ function Footer() {
     return (
         <div className="flex-container-row footer centered">
             <div className="foot fex-container-row">
-                <p>&copy; 2019 James Rodgers</p>
+                <p>&copy; 2020 James Rodgers</p>
             </div>
             <div className="flex-container-row">
                 <a href="http://github.com/jamrod" ><img src="./Octocat.jpg" alt="github" className="icons" /></a>
