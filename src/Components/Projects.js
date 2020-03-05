@@ -26,7 +26,7 @@ function Projects(props) {
                     <div>
 
                         <div className="flex-container-column centered">
-                            <a href="https://s3.amazonaws.com/faultystars.org/index.html">
+                            <a href="https://s3.amazonaws.com/faultystars.org/index.html" className="proj-link">
                                 <p className="project-page-links">
                                     Simon Memory Game
                                 </p>
@@ -37,14 +37,15 @@ function Projects(props) {
                                     <img src="/icons/javascript.svg" className="icons" alt="javascript badge" />
                                 </div>
                             </a>
+                            <a href="https://github.com/jamrod/simonGame">Github Repo</a>
                         </div>
 
                     </div>
 
                     <div className="flex-container-column centered">
-                        <a href="https://practical-babbage-bbcc33.netlify.com/" >
+                        <a href="https://practical-babbage-bbcc33.netlify.com/" className="proj-link">
                             <p className="project-page-links">
-                                Mixer-Assister cocktail app
+                                Mixer-Assister Cocktail app
                             </p>
                             <img src="/mixer-assister.png" className="link-pic" alt="mixer-assister screenshot" />
                             <div className="flex-container-row centered">
@@ -54,10 +55,11 @@ function Projects(props) {
                                 <img src="/icons/react.svg" className="icons" alt="react badge" />
                             </div>
                         </a>
+                        <a href="https://github.com/jamrod/mixer-assister">Github Repo</a>
                     </div>
 
                     <div className="flex-container-column centered">
-                        <a href="http://www.onlineherbal.org" >
+                        <a href="http://www.onlineherbal.org" className="proj-link">
                             <p className="project-page-links">
                                 Online Herbal Recipe App
                             </p>
@@ -69,6 +71,7 @@ function Projects(props) {
                                 <img src="/icons/django.svg" className="icons" alt="django badge" />
                             </div>
                         </a>
+                        <a href="https://github.com/jamrod/herbal-remedy-finder">Github Repo</a>
                     </div>
 
                 </div>
@@ -77,7 +80,7 @@ function Projects(props) {
                 <div className="flex-container-row space">
                     <div>
                         <div className="flex-container-column centered">
-                            <a href="https://thelittleherbalapothecary.com">
+                            <a href="https://thelittleherbalapothecary.com" className="proj-link">
                                 <p className="project-page-links">
                                     Little Herbal Apothecary
                                 </p>
@@ -90,7 +93,7 @@ function Projects(props) {
                     </div>
 
                     <div className="flex-container-column centered">
-                        <a href="https://gemstonefacialrollers.com">
+                        <a href="https://gemstonefacialrollers.com" className="proj-link">
                             <p className="project-page-links">
                                 GEMROLLERS
                             </p>

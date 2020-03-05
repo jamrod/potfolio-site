@@ -5,7 +5,7 @@ import '../App.css'
 function Footer() {
 
     return (
-        <div className="flex-container-row footer centered">
+        <div className="flex-container-row footer">
             <div className="foot fex-container-row">
                 <p>&copy; 2020 James Rodgers</p>
             </div>
