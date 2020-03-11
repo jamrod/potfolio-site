@@ -81,7 +81,7 @@ h1 {
 }
 
 .link-pic {
-  height: 150px;
+  height: 200px;
 }
 
 .icons {
@@ -186,6 +186,9 @@ h3 {
 @media screen and (max-width: 801px) {
   .project-space {
     justify-content: flex-start;
+  }
+  .link-pic {
+    height: 150px;
   }
 }
 

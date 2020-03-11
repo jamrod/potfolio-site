@@ -18,7 +18,7 @@ function Projects(props) {
 
 
     return (
-        <div className="projects-container">
+        <div className="projects-container centered">
             {checkPath()}
             <div className="flex-container-column projects project-space">
 
