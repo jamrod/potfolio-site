@@ -16,10 +16,11 @@ function Home(props) {
                             The tools and frameworks I work with include <span className="attention">React.js</span> and <span className="attention">Python Django</span> and platforms like <span className="attention">Wordpress, Shopify</span> and <span className="attention">Jekyll</span>. Also, I have been experimenting with <span className="attention">AWS</span> for years and decided to get my<a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2019-05-13&ci=AWS00887341"> Certified Cloud Practicioner certification</a> last year. I have a deep understanding of internet technologies and how the internet works.
                         </p>
                         <p>
-                            I have years of experience in tech, including management experience. An expert troubleshooter and problem solver who thrives on challenge. I got a big skills boost by going to General Assembly's Software Engineering Immersive course. Now I'm hoping to combine those new skills with my years of experience in health care, construction and customer service to bring solutions to complex problems.</p>
+                            I have years of experience in tech, including management experience. An expert troubleshooter and problem solver who thrives on challenge, I got a big skills boost by going to General Assembly's Software Engineering Immersive course. Now I'm hoping to combine those new skills with my years of experience in health care, construction and customer service to bring solutions to complex problems.</p>
                         <p>
                             I live in Lafayette CO with my wife and children. My wife, Faith, is the genius and animating force behind <a href="https:\\thelittleherbalapothecary.com">The Little Herbal Apothecary</a> in downtown Lafayette. If you are nearby, come in and check it out!
                         </p>
+                        <p className="attention"><div className="flex-container-row space"><a href="JCR_Resume.pdf" target="blank">Resume</a><a href="mailto:jamcrodgers@gmail.com?subject=Web Contact">JamCRodgers[at]gmail.com</a> </div></p>
                     </div>
 
                 </div>

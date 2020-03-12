@@ -9,7 +9,7 @@ function Header() {
 
             <div className="flex-container-column centered">
                 <Link to="/"><h1>James C Rodgers</h1></Link>
-                <span className="mini"><a href="mailto:jamcrodgers@gmail.com?subject=Web Contact">jamcrodgers[at]gmail.com</a></span>
+                <span>Software Engineer</span>
 
             </div>
 

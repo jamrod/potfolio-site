@@ -89,10 +89,6 @@ h1 {
   max-height: 50px;
 }
 
-.mini {
-  font-size: xx-small;
-}
-
 .nav {
   padding: 4px;
   width: 100%;
@@ -143,11 +139,6 @@ h3 {
 }
 
 .space {
-  justify-content: space-around;
-  width: 100%;
-}
-
-.project-space {
   justify-content: space-around;
   width: 100%;
 }

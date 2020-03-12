@@ -20,24 +20,25 @@ function Projects(props) {
     return (
         <div className="projects-container centered">
             {checkPath()}
-            <div className="flex-container-column projects project-space">
+            <div className="flex-container-column projects space">
 
                 <div className="flex-container-row space">
                     <div>
 
                         <div className="flex-container-column centered">
-                            <a href="https://s3.amazonaws.com/faultystars.org/index.html" className="proj-link" target="blank">
+                            <a href="http://www.onlineherbal.org" className="proj-link" target="blank">
                                 <p className="project-page-links">
-                                    Simon Memory Game
-                                </p>
-                                <img src="/Simon.png" className="link-pic" alt="simon screenshot" />
+                                    Online Herbal Recipe App
+                            </p>
+                                <img src="/OnlineHerbal.png" className="link-pic" alt="mixer-assister screenshot" />
                                 <div className="flex-container-row centered">
                                     <img src="/icons/HTML5.svg" className="icons" alt="html badge" />
                                     <img src="/icons/CSS3.svg" className="icons" alt="css badge" />
-                                    <img src="/icons/javascript.svg" className="icons" alt="javascript badge" />
+                                    <img src="/icons/python.svg" className="icons" alt="python badge" />
+                                    <img src="/icons/django.svg" className="icons" alt="django badge" />
                                 </div>
                             </a>
-                            <a href="https://github.com/jamrod/simonGame" target="blank">Github Repo</a>
+                            <a href="https://github.com/jamrod/herbal-remedy-finder" target="blank">Github Repo</a>
                         </div>
 
                     </div>
@@ -59,24 +60,23 @@ function Projects(props) {
                     </div>
 
                     <div className="flex-container-column centered">
-                        <a href="http://www.onlineherbal.org" className="proj-link" target="blank">
+                        <a href="https://s3.amazonaws.com/faultystars.org/index.html" className="proj-link" target="blank">
                             <p className="project-page-links">
-                                Online Herbal Recipe App
-                            </p>
-                            <img src="/OnlineHerbal.png" className="link-pic" alt="mixer-assister screenshot" />
+                                Simon Memory Game
+                                </p>
+                            <img src="/Simon.png" className="link-pic" alt="simon screenshot" />
                             <div className="flex-container-row centered">
                                 <img src="/icons/HTML5.svg" className="icons" alt="html badge" />
                                 <img src="/icons/CSS3.svg" className="icons" alt="css badge" />
-                                <img src="/icons/python.svg" className="icons" alt="python badge" />
-                                <img src="/icons/django.svg" className="icons" alt="django badge" />
+                                <img src="/icons/javascript.svg" className="icons" alt="javascript badge" />
                             </div>
                         </a>
-                        <a href="https://github.com/jamrod/herbal-remedy-finder" target="blank">Github Repo</a>
+                        <a href="https://github.com/jamrod/simonGame" target="blank">Github Repo</a>
                     </div>
+
 
                 </div>
 
-                <p></p>
                 <div className="flex-container-row space">
                     <div>
                         <div className="flex-container-column centered">
