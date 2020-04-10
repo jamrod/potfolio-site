@@ -24,7 +24,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App flex-container-column" styles={{ backgroundImage: `url(milky-way-starry-sky-night-sky-star-956981.jpeg)` }}>
+      <div className="App flex-container-column">
         <div className="container flex-container-column">
           <Header></Header>
           <Nav active={this.state.active} setActive={this.setActive}></Nav>
