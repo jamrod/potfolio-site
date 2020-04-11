@@ -1,11 +1,13 @@
 import React from 'react'
 
 import '../App.css'
+import { checkPath } from '../helpers'
 
 function Home(props) {
 
     return (
         <div className="flex-container-column centered">
+            {checkPath(props)}
             <div className="article">
                 <div className="flex-container-row content">
                     <div><img src="me.jpg" className="me-pic" alt="pic of me" />
@@ -20,7 +22,7 @@ function Home(props) {
                         <p>
                             I live in Lafayette CO with my wife and children. My wife, Faith, is the genius and animating force behind <a href="https:\\thelittleherbalapothecary.com">The Little Herbal Apothecary</a> in downtown Lafayette. If you are nearby, come in and check it out!
                         </p>
-                        <p className="attention"><div className="flex-container-row space"><a href="JCR_Resume.pdf" target="blank">Resume</a><a href="mailto:jamcrodgers@gmail.com?subject=Web Contact">JamCRodgers[at]gmail.com</a> </div></p>
+                        <p className="attention"><span className="flex-container-row space"><a href="JCR_Resume.pdf" target="blank">Resume</a><a href="mailto:jamcrodgers@gmail.com?subject=Web Contact">JamCRodgers[at]gmail.com</a> </span></p>
                     </div>
 
                 </div>

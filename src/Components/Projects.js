@@ -1,25 +1,12 @@
 import React from 'react'
-import { Redirect } from 'react-router-dom'
 import '../App.css'
+import { checkPath } from '../helpers'
 
 function Projects(props) {
-    const path = props.state.history.location
-    console.log(path)
-
-    const checkPath = () => {
-        if (path.hash) {
-            console.log(path.hash)
-            if (path.hash.includes('#!/About')) {
-                props.setActive('About')
-                return <Redirect push to='/About'></Redirect>
-            }
-        }
-    }
-
 
     return (
         <div className="projects-container centered">
-            {checkPath()}
+            {checkPath(props)}
             <div className="flex-container-column projects space">
 
                 <div className="flex-container-row space">

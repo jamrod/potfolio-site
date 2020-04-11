@@ -19,7 +19,12 @@ class App extends Component {
   }
 
   setActive = (str) => {
-    this.setState({ active: str })
+    if (str === '') {
+      str = 'Projects'
+    }
+    if (this.state.active !== str) {
+      this.setState({ active: str })
+    }
   }
 
   render() {
@@ -30,7 +35,7 @@ class App extends Component {
           <Nav active={this.state.active} setActive={this.setActive}></Nav>
           <Switch>
             <Route path="/" exact render={props => <Projects setActive={this.setActive} state={props} />} />
-            <Route path="/About/" component={Home} ></Route>
+            <Route path="/About/" render={props => <Home setActive={this.setActive} state={props} />} />
             <Route path="/Music" component={Music}></Route>
             <Route path="/Projects/" render={props => <Projects setActive={this.setActive} state={props} />} />
           </Switch>
