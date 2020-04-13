@@ -34,6 +34,11 @@ header a:hover {
   height: 85vh;
 }
 
+.short {
+  max-width: 800px;
+  height: 83vh;
+}
+
 .footer {
   background-color: rgba(231, 225, 225, 0.7);
   justify-content: space-around;
@@ -171,6 +176,16 @@ h3 {
   width: 100%;
 }
 
+.music-row {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 801px) {
   .project-space {
     justify-content: flex-start;
@@ -186,5 +201,8 @@ h3 {
   }
   .article {
     height: 100%;
+  }
+  .music-row {
+    width: 300px;
   }
 }

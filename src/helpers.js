@@ -3,8 +3,6 @@ import { Redirect } from 'react-router-dom'
 
 export function checkPath(props) {
     const path = props.state.history.location
-    console.log(props.state.history)
-    console.log(path)
     if (path.hash) {
         let active = path.hash.replace(/\/|!|#/g, '')
         active = '/' + active

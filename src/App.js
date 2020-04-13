@@ -7,6 +7,7 @@ import Home from './Components/Home'
 import Music from './Components/Music'
 import Projects from './Components/Projects'
 import Nav from './Components/Nav'
+import NoMatch from './Components/NoMatch'
 
 import './App.css';
 
@@ -36,8 +37,9 @@ class App extends Component {
           <Switch>
             <Route path="/" exact render={props => <Projects setActive={this.setActive} state={props} />} />
             <Route path="/About/" render={props => <Home setActive={this.setActive} state={props} />} />
-            <Route path="/Music" component={Music}></Route>
+            <Route path="/Music" render={props => <Music setActive={this.setActive} state={props} />} />
             <Route path="/Projects/" render={props => <Projects setActive={this.setActive} state={props} />} />
+            <Route path="/" render={props => <NoMatch setActive={this.setActive} state={props} />} />
           </Switch>
 
         </div>
