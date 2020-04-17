@@ -33,7 +33,7 @@ class App extends Component {
       <div className="App flex-container-column">
         <div className="container flex-container-column">
           <Header></Header>
-          <Nav active={this.state.active} setActive={this.setActive}></Nav>
+          <Nav active={this.state.active}></Nav>
           <Switch>
             <Route path="/" exact render={props => <Projects setActive={this.setActive} state={props} />} />
             <Route path="/About/" render={props => <Home setActive={this.setActive} state={props} />} />

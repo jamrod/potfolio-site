@@ -16,7 +16,6 @@ class Nav extends Component {
         if (this.props.active !== this.state.active) {
             this.setState({ active: this.props.active })
         }
-
     }
 
     render() {
@@ -25,9 +24,9 @@ class Nav extends Component {
             <div className="flex-container-row nav">
                 {pagesArr.map((page) => {
                     if (this.state.active === page) {
-                        return <span className="nav-link active" key={page} onClick={(e) => { this.props.setActive(page, e) }}><Link to={this.state.pages[page]}>{page}</Link></span>
+                        return <span className="nav-link active" key={page}><Link to={this.state.pages[page]}>{page}</Link></span>
                     } else {
-                        return <span className="nav-link" key={page} onClick={(e) => { this.props.setActive(page, e) }}><Link to={this.state.pages[page]}>{page}</Link></span>
+                        return <span className="nav-link" key={page}><Link to={this.state.pages[page]}>{page}</Link></span>
                     }
                 })}
             </div>
