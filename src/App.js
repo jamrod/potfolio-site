@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   setActive = (str) => {
-    if (str === '') {
+    if (!str) {
       str = 'Projects'
     }
     if (this.state.active !== str) {
@@ -41,13 +41,11 @@ class App extends Component {
             <Route path="/Projects/" render={props => <Projects setActive={this.setActive} state={props} />} />
             <Route path="/" render={props => <NoMatch setActive={this.setActive} state={props} />} />
           </Switch>
-
         </div>
         <Footer></Footer>
       </div>
     );
   }
-
 }
 
 export default App;

@@ -9,7 +9,7 @@ export function checkPath(props) {
         return <Redirect push to={active}></Redirect>
     }
     if (path.pathname) {
-        let active = path.pathname.replace(/\/|!|#/g, '')
+        let active = path.pathname.replace(/\//g, '')
         props.setActive(active)
     }
 
