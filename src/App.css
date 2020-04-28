@@ -126,6 +126,7 @@ a:hover {
 
 .proj-link {
   padding: 10px 5px 5px;
+  width: 330px;
 }
 
 .me-pic {
@@ -186,12 +187,37 @@ h3 {
   text-decoration: underline;
 }
 
+.description {
+  background-color: rgba(225, 225, 225, 0.8);
+  position: absolute;
+  z-index: -1;
+  width: 325px;
+  height: 190px;
+  padding: 5px;
+  display: none;
+  text-align: center;
+}
+
+.show {
+  display: flex;
+  z-index: 10;
+  color: black;
+  align-items: center;
+}
+
 @media screen and (max-width: 801px) {
   .project-space {
     justify-content: flex-start;
   }
   .link-pic {
     height: 150px;
+  }
+  .proj-link {
+    width: 250px;
+  }
+  .description {
+    width: 245px;
+    height: 140px;
   }
 }
 
