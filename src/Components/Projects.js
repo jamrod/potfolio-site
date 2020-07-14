@@ -118,7 +118,7 @@ function Projects(props) {
                                     Gallery Site made with 11ty using Liquid Template Language and hosted on AWS in an S3 bucket utilizing CloudFront.
                                 </p>
                             </div>
-                            <img src="/KingSpookScreenshot.png" className="link-pic" alt="king spook screenshot" />
+                            <img src="/kingSpookScreenshot.png" className="link-pic" alt="king spook screenshot" />
                             <div className="flex-container-row centered">
                                 <img src="/icons/HTML5.svg" className="icons" alt="html badge" />
                                 <img src="/icons/CSS3.svg" className="icons" alt="css badge" />
