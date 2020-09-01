@@ -6,8 +6,10 @@ function Footer() {
 
     return (
         <div className="flex-container-row footer">
-            <div className="foot fex-container-row">
-                <p>&copy; 2020 James Rodgers</p>
+            <div className="foot flex-container-row">
+                <span>&hearts; &copy; 2020</span>
+                <img alt="JR" class="icon" src="/assets/img/JRsymbol.png" />
+                <span>JCR &hearts;</span>
             </div>
             <div className="flex-container-row">
                 <a href="mailto:jamcrodgers@gmail.com?subject=Web Contact"><img src="./icons/mail.svg" alt="email" className="icons" /></a>

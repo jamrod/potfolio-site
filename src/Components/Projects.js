@@ -106,6 +106,7 @@ function Projects(props) {
                                 <img src="/icons/aws.svg" className="icons" alt="aws badge" />
                             </div>
                         </a>
+                        <span className="filler">&hearts;</span>
                     </div>
 
                     <div className="flex-container-column centered">
@@ -144,10 +145,11 @@ function Projects(props) {
                                 <img src="/icons/shopify.svg" className="icons" alt="shopify badge" />
                             </div>
                         </a>
+                        <span className="filler">&hearts;</span>
                     </div>
                 </div> {/*end row 2 */}
             </div>
-        </div>
+        </div >
 
     )
 }
