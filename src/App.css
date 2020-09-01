@@ -63,8 +63,8 @@ header a:hover {
   align-self: end;
 }
 
-.footer p {
-  margin: 1px;
+.foots {
+  margin: 5px 0 0;
 }
 
 p {
