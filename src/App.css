@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   background-color: #bce0f5;
   background-image: url("https://i.imgur.com/CJmPnX6.png");
   background-repeat: repeat;
@@ -10,9 +11,8 @@ body {
 
 .App {
   min-height: 100%;
+  width: 100%;
   text-align: center;
-  justify-content: center;
-  /* align-items: stretch; */
 }
 
 .container {
@@ -40,16 +40,23 @@ header a:hover {
 }
 
 .footer {
-  background-color: rgba(231, 225, 225, 0.7);
+  width: 100%;
+  /* background-color: rgba(231, 225, 225, 0.7); */
+  background-image: url("/funFooter.png");
+  background-repeat: repeat-x;
   justify-content: space-around;
-  box-shadow: 0px 0px 5px whitesmoke;
+  /* box-shadow: 0px 0px 5px whitesmoke; */
   margin-top: auto;
-  padding: 1px;
+  padding: 27px 1px 1px;
   flex-shrink: 0;
 }
 
 .footer p {
   margin: 1px;
+}
+
+p {
+  margin: 10px;
 }
 
 @keyframes scroll {
@@ -96,7 +103,7 @@ h1 {
 }
 
 .nav {
-  padding: 4px;
+  padding: 3px 0px 1px;
   width: 100%;
   border-top: 1px solid rgb(55, 55, 55);
   border-bottom: 1px solid rgb(55, 55, 55);
@@ -105,12 +112,16 @@ h1 {
 
 .nav-link {
   height: 25px;
-  padding: 0 15px;
+  padding: 4px 15px 1px;
+  width: 70px;
 }
 
 .active {
-  background-color: whitesmoke;
-  border-radius: 35%;
+  /* background-color: whitesmoke;
+  border-radius: 35%; */
+  background-image: url("/SkinnyCloud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 ul {
@@ -133,7 +144,8 @@ a:hover {
 .me-pic {
   max-width: 300px;
   float: left;
-  padding-right: 5px;
+  margin: 10px;
+  padding: 5px 5px 0 0;
 }
 
 .attention {
