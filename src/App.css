@@ -26,13 +26,11 @@ body {
 
 .container {
   align-content: space-between;
-  /* flex: 1 0 auto; */
   grid-row: 1;
 }
 
 header {
   margin: 5px 0;
-  /* flex-shrink: 0; */
 }
 
 header a:hover {
@@ -41,24 +39,19 @@ header a:hover {
 
 .article {
   max-width: 800px;
-  /* height: 85vh; */
 }
 
 .short {
   max-width: 800px;
-  /* height: 83vh; */
 }
 
 .footer {
   width: 100%;
-  /* background-color: rgba(231, 225, 225, 0.7); */
-  background-image: url("/funFooter.png");
+  background-image: url("/funFooter1.png");
   background-repeat: repeat-x;
   justify-content: space-around;
-  /* box-shadow: 0px 0px 5px whitesmoke; */
   margin-top: auto;
   padding: 27px 1px 1px;
-  /* flex-shrink: 0; */
   grid-row: 2;
   align-self: end;
 }
@@ -129,8 +122,6 @@ h1 {
 }
 
 .active {
-  /* background-color: whitesmoke;
-  border-radius: 35%; */
   background-image: url("/SkinnyCloud.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -161,7 +152,7 @@ a:hover {
 }
 
 .attention {
-  color: crimson;
+  color: #db123a;
   font-size: large;
 }
 
@@ -189,9 +180,7 @@ h3 {
   width: 100%;
   height: 100%;
   text-align: center;
-  /* flex-wrap: wrap; */
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-rows: 1fr 1fr;
   row-gap: 1%;
 }
@@ -205,7 +194,6 @@ h3 {
 }
 
 .projects-container {
-  /* height: 85vh; */
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
@@ -234,6 +222,10 @@ h3 {
   padding: 5px;
   display: none;
   text-align: center;
+}
+
+.description p {
+  width: 100%;
 }
 
 .show {
