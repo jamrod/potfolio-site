@@ -124,6 +124,7 @@ function Projects(props) {
                                 <img src="/icons/HTML5.svg" className="icons" alt="html badge" />
                                 <img src="/icons/CSS3.svg" className="icons" alt="css badge" />
                                 <img src="/icons/javascript.svg" className="icons" alt="javascript badge" />
+                                <img src="/icons/11tyIcon.png" className="icons" alt="11ty badge" />
                                 <img src="/icons/aws.svg" className="icons" alt="aws badge" />
                             </div>
                         </a>
