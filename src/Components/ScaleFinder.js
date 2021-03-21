@@ -50,52 +50,52 @@ class ScaleFinder extends Component {
                     <div className="scale-results flex-container-row">
                         <div className="scales">
                             <span className="scale-header">Major Triad</span>
-                            <div>1st</div><div className="root">{scale[0]} </div>
-                            <div>3rd</div><div className="3rd">{scale[4]} </div>
-                            <div>5th</div><div className="5th">{scale[6]} </div>
+                            <div>1st</div><div>{scale[0]} </div>
+                            <div>3rd</div><div>{scale[4]} </div>
+                            <div>5th</div><div>{scale[6]} </div>
                         </div>
                         <br></br>
                         <div className="scales">
                             <span className="scale-header">Minor Triad</span>
-                            <div>1st</div><div className="root">{scale[0]} </div>
-                            <div>3 Flat</div><div className="3Flat">{scale[3]} </div>
-                            <div>5th</div> <div className="5th">{scale[4]} </div>
+                            <div>1st</div><div>{scale[0]} </div>
+                            <div>3 Flat</div><div>{scale[3]} </div>
+                            <div>5th</div> <div>{scale[4]} </div>
                         </div >
                         <br></br>
                     </div>
                     <div className="scale-results flex-container-row">
                         <div className="scales">
                             <span className="scale-header">Major Scale</span>
-                            <div>1st</div><div class="root">{scale[0]} </div>
-                            <div>2nd</div><div class="2nd">{scale[2]} </div>
-                            <div>3rd</div><div class="3rd">{scale[4]} </div>
-                            <div>4th</div><div class="4th">{scale[5]} </div>
-                            <div>5th</div><div class="5th">{scale[7]} </div>
-                            <div>6th</div><div class="6th">{scale[9]} </div>
-                            <div>7th</div><div class="7th">{scale[11]} </div>
-                            <div>8th</div><div class="root">{scale[0]} </div>
+                            <div>1st</div><div>{scale[0]} </div>
+                            <div>2nd</div><div>{scale[2]} </div>
+                            <div>3rd</div><div>{scale[4]} </div>
+                            <div>4th</div><div>{scale[5]} </div>
+                            <div>5th</div><div>{scale[7]} </div>
+                            <div>6th</div><div>{scale[9]} </div>
+                            <div>7th</div><div>{scale[11]} </div>
+                            <div>8th</div><div>{scale[0]} </div>
                         </div>
                         <div className="scales">
                             <span className="scale-header">Minor Scale</span>
-                            <div>1st</div><div class="root">{scale[0]} </div>
-                            <div>2nd</div><div class="2nd">{scale[2]}</div>
-                            <div>3 Flat</div><div class="3Flat">{scale[3]} </div>
-                            <div>4th</div><div class="4th">{scale[5]} </div>
-                            <div>5th</div><div class="5th">{scale[7]} </div>
-                            <div>6 Flat</div><div id="sixFlat">{scale[8]} </div>
-                            <div>7 Flat</div><div class="7Flat">{scale[10]} </div>
-                            <div>8th</div><div class="root">{scale[0]} </div>
+                            <div>1st</div><div>{scale[0]} </div>
+                            <div>2nd</div><div>{scale[2]}</div>
+                            <div>3 Flat</div><div>{scale[3]} </div>
+                            <div>4th</div><div>{scale[5]} </div>
+                            <div>5th</div><div>{scale[7]} </div>
+                            <div>6 Flat</div><div>{scale[8]} </div>
+                            <div>7 Flat</div><div>{scale[10]} </div>
+                            <div>8th</div><div>{scale[0]} </div>
                         </div>
 
                         <div className="scales">
                             <span className="scale-header">Blues Scale</span>
-                            <div>1st</div><div class="root">{scale[0]}</div>
-                            <div>3 Flat</div><div class="3Flat">{scale[3]} </div>
-                            <div>4th</div><div class="4th">{scale[5]} </div>
-                            <div>5 Flat</div><div class="5Flat">{scale[6]} </div>
-                            <div>5th</div><div class="5th">{scale[7]} </div>
-                            <div>7 Flat</div><div class="7Flat">{scale[10]} </div>
-                            <div>8th</div><div class="root">{scale[0]} </div>
+                            <div>1st</div><div>{scale[0]}</div>
+                            <div>3 Flat</div><div>{scale[3]} </div>
+                            <div>4th</div><div>{scale[5]} </div>
+                            <div>5 Flat</div><div>{scale[6]} </div>
+                            <div>5th</div><div>{scale[7]} </div>
+                            <div>7 Flat</div><div>{scale[10]} </div>
+                            <div>8th</div><div>{scale[0]} </div>
                         </div>
                     </div>
                 </div >

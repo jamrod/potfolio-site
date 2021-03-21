@@ -25,7 +25,7 @@ function Home(props) {
                             <br></br> <span className="attention"><a href="https://hackernoon.com/build-a-gallery-site-with-11ty-lu203zzm">Build a Gallery Site With 11ty</a> </span>
                         </p>
                         <p>
-                            I'm not just a Software Engineer, I'm also a Musician. I made this cool app which lets you quickly determine music scales <a href="/ScaleFinder">here</a>. Also, I have some albums which I recorded with bands I played in years ago, you can download <a href="/Music">here</a>.
+                            I'm not just a Software Engineer, I'm also a Musician. I made this <a href="/ScaleFinder">cool app which lets you quickly determine music scales here</a>. Also, I have some <a href="/Music">albums which I recorded with bands I played in years ago, you can download here</a>.
                         </p>
                         <p>
                             I live in Lafayette CO with my wife and children. My wife, Faith, is the genius and animating force behind <a href="https:\\thelittleherbalapothecary.com">The Little Herbal Apothecary</a> in downtown Lafayette. If you are nearby, come in and check it out!
