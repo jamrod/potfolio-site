@@ -29,7 +29,7 @@ function Projects(props) {
                                 Online Herbal Recipe App
                             </p>
                             <div className="description" id="online-herbal">
-                                <p>Made with Python Django and hosted in an EC2 instance on AWS, this site has a PostgreSQL database which is searchable through a REST API.</p>
+                                <p>Made with Python Django and hosted in an EC2 instance on AWS, this site has full CRUD functionality and a PSQL database which is searchable through a REST API.</p>
                             </div>
                             <img src="/OnlineHerbal.png" className="link-pic" alt="mixer-assister screenshot" />
                             <div className="flex-container-row centered">
@@ -90,23 +90,26 @@ function Projects(props) {
 
                 <div className="flex-container-row space" id="row2">{/*start row 2 */}
 
-                    <div className="flex-container-column centered">
-                        <a href="https://thelittleherbalapothecary.com" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "lha") }} onMouseOut={function (e) { hideDescription(e, "lha") }}>
+                <div className="flex-container-column centered">
+                        <a href="https://flash-cards.jamescrodgers.com" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "flashcards") }} onMouseOut={function (e) { hideDescription(e, "flashcards") }}>
                             <p className="project-page-links">
-                                Little Herbal Apothecary
-                                </p>
-                            <div className="description" id="lha">
+                                Flash Cards
+                            </p>
+                            <div className="description" id="flashcards">
                                 <p>
-                                    Shopify Online Store and Wordpress Blog. Blog is hosted in AWS Lightsail.
-                                    </p>
+                                    Made with React.js and hosted in an S3 bucket.
+                                </p>
                             </div>
-                            <img src="/LittleHerbalApothecary.png" className="link-pic" alt="apothecary screenshot" />
+                            <img src="/flashCardScreenshot.png" className="link-pic" alt="flash cards screenshot" />
                             <div className="flex-container-row centered">
-                                <img src="/icons/shopify.svg" className="icons" alt="shopify badge" />
+                                <img src="/icons/HTML5.svg" className="icons" alt="html badge" />
+                                <img src="/icons/CSS3.svg" className="icons" alt="css badge" />
+                                <img src="/icons/javascript.svg" className="icons" alt="javascript badge" />
+                                <img src="/icons/react.svg" className="icons" alt="11ty badge" />
                                 <img src="/icons/aws.svg" className="icons" alt="aws badge" />
                             </div>
                         </a>
-                        <span className="filler">&hearts;</span>
+                        <a href="https://github.com/jamrod/flashcards" target="blank">Github Repo</a>
                     </div>
 
                     <div className="flex-container-column centered">
@@ -131,6 +134,48 @@ function Projects(props) {
                         <a href="https://github.com/jamrod/kingspook" target="blank">Github Repo</a>
                     </div>
 
+                </div> {/*end row 2 */}
+
+                <div className="flex-container-row space" id="row3">{/*start row 3 */}
+
+                    <div className="flex-container-column centered">
+                        <a href="https://stercommtech.com.com" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "sterling") }} onMouseOut={function (e) { hideDescription(e, "sterling") }}>
+                            <p className="project-page-links">
+                                Sterling Communication Technologies
+                                </p>
+                            <div className="description" id="sterling">
+                                <p>
+                                    Made with Wordpress and hosted in AWS Lightsail.
+                                </p>
+                            </div>
+                            <img src="/stercommtechScreenshot.png" className="link-pic" alt="stercommtech.com screenshot" />
+                            <div className="flex-container-row centered">
+                                <img src="/icons/wordpress.svg" className="icons" alt="wordpress badge" />
+                                <img src="/icons/aws.svg" className="icons" alt="aws badge" />
+                            </div>
+                        </a>
+                        <span className="filler">&hearts;</span>
+                    </div>
+
+                    <div className="flex-container-column centered">
+                        <a href="https://thelittleherbalapothecary.com" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "lha") }} onMouseOut={function (e) { hideDescription(e, "lha") }}>
+                            <p className="project-page-links">
+                                Little Herbal Apothecary
+                                </p>
+                            <div className="description" id="lha">
+                                <p>
+                                    Shopify Online Store and Wordpress Blog. Blog is hosted in AWS Lightsail.
+                                    </p>
+                            </div>
+                            <img src="/LittleHerbalApothecary.png" className="link-pic" alt="apothecary screenshot" />
+                            <div className="flex-container-row centered">
+                                <img src="/icons/shopify.svg" className="icons" alt="shopify badge" />
+                                <img src="/icons/aws.svg" className="icons" alt="aws badge" />
+                            </div>
+                        </a>
+                        <span className="filler">&hearts;</span>
+                    </div>                    
+
                     <div className="flex-container-column centered">
                         <a href="https://gemstonefacialrollers.com" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "gemrollers") }} onMouseOut={function (e) { hideDescription(e, "gemrollers") }}>
                             <p className="project-page-links">
@@ -148,7 +193,8 @@ function Projects(props) {
                         </a>
                         <span className="filler">&hearts;</span>
                     </div>
-                </div> {/*end row 2 */}
+                </div> {/*end row 3 */}
+
             </div>
         </div >
 
