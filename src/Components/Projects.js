@@ -21,7 +21,7 @@ function Projects(props) {
             {/*<div className="flex-container-column projects space">*/}
             <div className="projects">
 
-                <div className="flex-container-row space" id="row1"> {/*start row 1 */}
+                <div className="flex-container-row space" > {/*start row 1 */}
 
                     <div className="flex-container-column centered">
                         <a href="http://www.onlineherbal.org" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "online-herbal") }} onMouseOut={function (e) { hideDescription(e, "online-herbal") }}>
@@ -88,7 +88,7 @@ function Projects(props) {
 
                 </div>{/*end row 1 */}
 
-                <div className="flex-container-row space" id="row2">{/*start row 2 */}
+                <div className="flex-container-row space" >{/*start row 2 */}
 
                 <div className="flex-container-column centered">
                         <a href="https://flash-cards.jamescrodgers.com" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "flashcards") }} onMouseOut={function (e) { hideDescription(e, "flashcards") }}>
@@ -136,7 +136,7 @@ function Projects(props) {
 
                 </div> {/*end row 2 */}
 
-                <div className="flex-container-row space" id="row3">{/*start row 3 */}
+                <div className="flex-container-row space" >{/*start row 3 */}
 
                     <div className="flex-container-column centered">
                         <a href="https://stercommtech.com.com" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "sterling") }} onMouseOut={function (e) { hideDescription(e, "sterling") }}>

@@ -184,16 +184,8 @@ h3 {
   height: 100%;
   text-align: center;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto 1fr;
   row-gap: 1%;
-}
-
-#row1 {
-  grid-row: 1;
-}
-
-#row2 {
-  grid-row: 2;
 }
 
 .projects-container {
