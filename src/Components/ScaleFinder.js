@@ -66,7 +66,7 @@ class ScaleFinder extends Component {
                                 (<option value={i} key={i}>{note}</option>)
                             )}
                         </select>
-                        <input type="checkbox" onClick={this.toggleSharpFlat} id="checkbox"/><label>Use Flat?</label>
+                        <input type="checkbox" onClick={this.toggleSharpFlat} id="checkbox"/><label>Use Flat</label>
                     </p>
                     
                     <div className="scale-results flex-container-row">
@@ -74,14 +74,14 @@ class ScaleFinder extends Component {
                             <span className="scale-header">Major Triad</span>
                             <div>1st</div><div>{scale[0]} </div>
                             <div>3rd</div><div>{scale[4]} </div>
-                            <div>5th</div><div>{scale[6]} </div>
+                            <div>5th</div><div>{scale[7]} </div>
                         </div>
                         <br></br>
                         <div className="scales">
                             <span className="scale-header">Minor Triad</span>
                             <div>1st</div><div>{scale[0]} </div>
                             <div>{sharpFlat[0][key]}</div><div>{scale[3]} </div>
-                            <div>5th</div> <div>{scale[4]} </div>
+                            <div>5th</div> <div>{scale[7]} </div>
                         </div >
                         <br></br>
                     </div>
