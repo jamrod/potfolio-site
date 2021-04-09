@@ -9,7 +9,7 @@ function NoMatch(props) {
         <div className="flex-container-column centered">
             {checkPath(props)}
             <div className='short'>
-                <p>Hmm, There doesn't seem to be anything here... Go back <Link to="/">Home?</Link></p>
+                <p>Hmm, There doesn't seem to be anything here... Go back <Link to="/" role="link">Home?</Link></p>
             </div>
         </div>
     )

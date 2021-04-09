@@ -26,7 +26,7 @@ body {
 
 }
 
-.container {
+.main {
   align-content: space-between;
   grid-row: 1;
 }
@@ -48,7 +48,7 @@ header a:hover {
   max-width: 800px;
 }
 
-.footer {
+Footer {
   width: 100%;
   background-image: url("/funFooter.png");
   background-repeat: repeat-x;
@@ -81,6 +81,13 @@ h1 {
   margin: 4px;
 }
 
+h2 {
+  padding: 2px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .flex-container-row {
   display: flex;
   flex-direction: row;
@@ -110,7 +117,7 @@ h1 {
   max-height: 50px;
 }
 
-.nav {
+Nav {
   padding: 3px 0px 1px;
   width: 100%;
   border-top: 1px solid rgb(55, 55, 55);
@@ -148,7 +155,7 @@ a:hover {
 }
 
 .me-pic {
-  max-width: 300px;
+  width: 200px;
   float: left;
   margin: 10px;
   padding: 5px 5px 0 0;
@@ -157,10 +164,6 @@ a:hover {
 .attention {
   color: #db123a;
   font-size: large;
-}
-
-h3 {
-  margin: 2px;
 }
 
 .space {
@@ -174,10 +177,6 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.project-page-links {
-  padding: 2px;
-  margin: 0;
-}
 
 .projects {
   width: 100%;
@@ -233,6 +232,11 @@ h3 {
 
 .filler {
   visibility: hidden;
+}
+
+#finder-header {
+  font-size: 19px;
+  font-weight: 700;
 }
 
 .scale-results {

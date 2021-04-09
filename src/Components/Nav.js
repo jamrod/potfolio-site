@@ -21,15 +21,15 @@ class Nav extends Component {
     render() {
         let pagesArr = Object.keys(this.state.pages)
         return (
-            <div className="flex-container-row nav">
+            <nav className="flex-container-row">
                 {pagesArr.map((page) => {
                     if (this.state.active === page) {
-                        return <span className="nav-link active" key={page}><Link to={this.state.pages[page]}>{page}</Link></span>
+                        return <span className="nav-link active" role="link" key={page}><Link to={this.state.pages[page]}>{page}</Link></span>
                     } else {
-                        return <span className="nav-link" key={page}><Link to={this.state.pages[page]}>{page}</Link></span>
+                        return <span className="nav-link" role="link" key={page}><Link to={this.state.pages[page]}>{page}</Link></span>
                     }
                 })}
-            </div>
+            </nav>
         )
     }
 

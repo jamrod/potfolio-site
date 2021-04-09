@@ -55,7 +55,7 @@ class ScaleFinder extends Component {
         return (
             <div className="flex-container-column centered">
                 <div className="article" >
-                    <h3>Scale Finder</h3>
+                    <h2 id="finder-header">Scale Finder</h2>
                     <p className="content">
                         This is a simple chart to find music scales from a root note. Select a note and the chart below will populate with the notes that make up the Major chord, Minor chord and Major, Minor, Blues and Pentatonic scales.
                     </p>

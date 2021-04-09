@@ -18,16 +18,16 @@ function Projects(props) {
     return (
         <div className="projects-container centered">
             {checkPath(props)}
-            {/*<div className="flex-container-column projects space">*/}
+            
             <div className="projects">
 
                 <div className="flex-container-row space" > {/*start row 1 */}
 
                     <div className="flex-container-column centered">
-                        <a href="http://www.onlineherbal.org" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "online-herbal") }} onMouseOut={function (e) { hideDescription(e, "online-herbal") }}>
-                            <p className="project-page-links">
+                        <a href="http://www.onlineherbal.org" className="proj-link"  target="blank" onMouseOver={function (e) { showDescription(e, "online-herbal") }} onMouseOut={function (e) { hideDescription(e, "online-herbal") }}>
+                            <h2>
                                 Online Herbal Recipe App
-                            </p>
+                            </h2>
                             <div className="description" id="online-herbal">
                                 <p>Made with Python Django and hosted in an EC2 instance on AWS, this site has full CRUD functionality and a PSQL database which is searchable through a REST API.</p>
                             </div>
@@ -46,10 +46,10 @@ function Projects(props) {
                     </div>
 
                     <div className="flex-container-column centered">
-                        <a href="https://practical-babbage-bbcc33.netlify.com/" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "mixer-assister") }} onMouseOut={function (e) { hideDescription(e, "mixer-assister") }}>
-                            <p className="project-page-links">
+                        <a href="https://practical-babbage-bbcc33.netlify.com/" className="proj-link"  target="blank" onMouseOver={function (e) { showDescription(e, "mixer-assister") }} onMouseOut={function (e) { hideDescription(e, "mixer-assister") }}>
+                            <h2>
                                 Mixer-Assister Cocktail app
-                            </p>
+                            </h2>
                             <div className="description" id="mixer-assister">
                                 <p>Made with React.js and hosted on Netlify, this app is a front-end consuming the REST API from thecocktail.db.</p>
                             </div>
@@ -61,14 +61,14 @@ function Projects(props) {
                                 <img src="/icons/react.svg" className="icons" alt="react badge" />
                             </div>
                         </a>
-                        <a href="https://github.com/jamrod/mixer-assister" target="blank">Github Repo</a>
+                        <a href="https://github.com/jamrod/mixer-assister"  target="blank">Github Repo</a>
                     </div>
 
                     <div className="flex-container-column centered">
-                        <a href="https://s3.amazonaws.com/faultystars.org/index.html" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "simon") }} onMouseOut={function (e) { hideDescription(e, "simon") }}>
-                            <p className="project-page-links">
+                        <a href="https://s3.amazonaws.com/faultystars.org/index.html" className="proj-link"  target="blank" onMouseOver={function (e) { showDescription(e, "simon") }} onMouseOut={function (e) { hideDescription(e, "simon") }}>
+                            <h2>
                                 Simon Memory Game
-                            </p>
+                            </h2>
                             <div className="description" id="simon">
                                 <p>
                                     Vanilla Javascript game hosted in an S3 bucket.
@@ -82,7 +82,7 @@ function Projects(props) {
                                 <img src="/icons/aws.svg" className="icons" alt="aws badge" />
                             </div>
                         </a>
-                        <a href="https://github.com/jamrod/simonGame" target="blank">Github Repo</a>
+                        <a href="https://github.com/jamrod/simonGame"  target="blank">Github Repo</a>
                     </div>
 
 
@@ -91,10 +91,10 @@ function Projects(props) {
                 <div className="flex-container-row space" >{/*start row 2 */}
 
                 <div className="flex-container-column centered">
-                        <a href="https://flash-cards.jamescrodgers.com" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "flashcards") }} onMouseOut={function (e) { hideDescription(e, "flashcards") }}>
-                            <p className="project-page-links">
+                        <a href="https://flash-cards.jamescrodgers.com" className="proj-link"  target="blank" onMouseOver={function (e) { showDescription(e, "flashcards") }} onMouseOut={function (e) { hideDescription(e, "flashcards") }}>
+                            <h2>
                                 Flash Cards
-                            </p>
+                            </h2>
                             <div className="description" id="flashcards">
                                 <p>
                                     Made with React.js and hosted in an S3 bucket.
@@ -109,14 +109,14 @@ function Projects(props) {
                                 <img src="/icons/aws.svg" className="icons" alt="aws badge" />
                             </div>
                         </a>
-                        <a href="https://github.com/jamrod/flashcards" target="blank">Github Repo</a>
+                        <a href="https://github.com/jamrod/flashcards"  target="blank">Github Repo</a>
                     </div>
 
                     <div className="flex-container-column centered">
-                        <a href="https://kingspook.com" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "kingspook") }} onMouseOut={function (e) { hideDescription(e, "kingspook") }}>
-                            <p className="project-page-links">
+                        <a href="https://kingspook.com" className="proj-link"  target="blank" onMouseOver={function (e) { showDescription(e, "kingspook") }} onMouseOut={function (e) { hideDescription(e, "kingspook") }}>
+                            <h2>
                                 Kingspook.com
-                            </p>
+                            </h2>
                             <div className="description" id="kingspook">
                                 <p>
                                     Gallery Site made with 11ty using Liquid Template Language and hosted on AWS in an S3 bucket utilizing CloudFront.
@@ -131,7 +131,7 @@ function Projects(props) {
                                 <img src="/icons/aws.svg" className="icons" alt="aws badge" />
                             </div>
                         </a>
-                        <a href="https://github.com/jamrod/kingspook" target="blank">Github Repo</a>
+                        <a href="https://github.com/jamrod/kingspook"  target="blank">Github Repo</a>
                     </div>
 
                 </div> {/*end row 2 */}
@@ -139,10 +139,10 @@ function Projects(props) {
                 <div className="flex-container-row space" >{/*start row 3 */}
 
                     <div className="flex-container-column centered">
-                        <a href="https://stercommtech.com.com" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "sterling") }} onMouseOut={function (e) { hideDescription(e, "sterling") }}>
-                            <p className="project-page-links">
+                        <a href="https://stercommtech.com.com" className="proj-link"  target="blank" onMouseOver={function (e) { showDescription(e, "sterling") }} onMouseOut={function (e) { hideDescription(e, "sterling") }}>
+                            <h2>
                                 Sterling Communication Technologies
-                                </p>
+                            </h2>
                             <div className="description" id="sterling">
                                 <p>
                                     Made with Wordpress and hosted in AWS Lightsail.
@@ -158,10 +158,10 @@ function Projects(props) {
                     </div>
 
                     <div className="flex-container-column centered">
-                        <a href="https://thelittleherbalapothecary.com" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "lha") }} onMouseOut={function (e) { hideDescription(e, "lha") }}>
-                            <p className="project-page-links">
+                        <a href="https://thelittleherbalapothecary.com" className="proj-link"  target="blank" onMouseOver={function (e) { showDescription(e, "lha") }} onMouseOut={function (e) { hideDescription(e, "lha") }}>
+                            <h2>
                                 Little Herbal Apothecary
-                                </p>
+                            </h2>
                             <div className="description" id="lha">
                                 <p>
                                     Shopify Online Store and Wordpress Blog. Blog is hosted in AWS Lightsail.
@@ -177,10 +177,10 @@ function Projects(props) {
                     </div>                    
 
                     <div className="flex-container-column centered">
-                        <a href="https://gemstonefacialrollers.com" className="proj-link" target="blank" onMouseOver={function (e) { showDescription(e, "gemrollers") }} onMouseOut={function (e) { hideDescription(e, "gemrollers") }}>
-                            <p className="project-page-links">
+                        <a href="https://gemstonefacialrollers.com" className="proj-link"  target="blank" onMouseOver={function (e) { showDescription(e, "gemrollers") }} onMouseOut={function (e) { hideDescription(e, "gemrollers") }}>
+                            <h2>
                                 GEMROLLERS
-                            </p>
+                            </h2>
                             <div className="description" id="gemrollers">
                                 <p>
                                     Shopify Online Store.

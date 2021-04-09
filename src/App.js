@@ -32,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="container flex-container-column">
+        <div className="main flex-container-column">
           <Header></Header>
           <Nav active={this.state.active}></Nav>
           <Switch>

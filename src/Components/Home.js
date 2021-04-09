@@ -22,29 +22,24 @@ function Home(props) {
                         <p>
                             Here are some recent writings of mine posted to <a href="https://hackernoon.com">Hackernoon</a>...
                             <br></br> <span className="attention"><a href="https://hackernoon.com/handling-client-side-routing-when-hosting-your-reactjs-project-on-aws-s3-da6j3veq" target="blank">Handling Client Side Routing When Hosting Your React Project on AWS S3</a></span>
-                            <br></br> <span className="attention"><a href="https://hackernoon.com/build-a-gallery-site-with-11ty-lu203zzm">Build a Gallery Site With 11ty</a> </span>
+                            <br></br> <span className="attention"><a href="https://hackernoon.com/build-a-gallery-site-with-11ty-lu203zzm"  target="blank">Build a Gallery Site With 11ty</a> </span>
                         </p>
                         <p>
-                            I'm not just a Software Engineer, I'm also a Musician. I made this <a href="/ScaleFinder">cool app which lets you quickly determine music scales here</a>. Also, I have some <a href="/Music">albums which I recorded with bands I played in years ago, you can download here</a>.
+                            I'm not just a Software Engineer, I'm also a Musician. I made this <a href="/ScaleFinder"  >cool app which lets you quickly determine music scales here</a>. Also, I have some <a href="/Music" >albums which I recorded with bands I played in years ago, you can download here</a>.
                         </p>
                         <p>
-                            I live in Lafayette CO with my wife and children. My wife, Faith, is the genius and animating force behind <a href="https:\\thelittleherbalapothecary.com">The Little Herbal Apothecary</a> in downtown Lafayette. If you are nearby, come in and check it out!
+                            I live in Lafayette CO with my wife and children. My wife, Faith, is the genius and animating force behind <a href="https:\\thelittleherbalapothecary.com"  target="blank">The Little Herbal Apothecary</a> in downtown Lafayette. If you are nearby, come in and check it out!
                         </p>
-                        <p className="attention"><span className="flex-container-row space"><a href="JCR_Resume.pdf" target="blank">Resume</a><a href="mailto:jamcrodgers@gmail.com?subject=Web Contact">JamCRodgers[at]gmail.com</a> </span></p>
+                        <p className="attention"><span className="flex-container-row space"><a href="JCR_Resume.pdf" target="blank">Resume</a><a href="mailto:jamcrodgers@gmail.com?subject=Web Contact"  >JamCRodgers[at]gmail.com</a> </span></p>
                     </div>
 
                 </div>
                 <div className="flex-container-row space">
                     <img src="./icons/aws.svg" className="badges" alt="aws badge" />
-                    {/* <img src="/icons/django.svg" className="badges" /> */}
-                    {/* <img src="/icons/node.svg" className="badges" /> */}
                     <img src="/icons/python.svg" className="badges" alt="python badge" />
-                    {/* <img src="/icons/react.svg" className="badges" /> */}
                     <img src="/icons/HTML5.svg" className="badges" alt="HTML badge" />
                     <img src="/icons/CSS3.svg" className="badges" alt="CSS badge" />
                     <img src="/icons/javascript.svg" className="badges" alt="javascript badge" />
-                    {/* <img src="/icons/mongodb.svg" className="badges" /> */}
-                    {/* <img src="/icons/psql.svg" className="badges" /> */}
                 </div>
             </div>
         </div >

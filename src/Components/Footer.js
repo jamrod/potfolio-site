@@ -5,7 +5,7 @@ import '../App.css'
 function Footer() {
 
     return (
-        <div className="flex-container-row footer">
+        <footer className="flex-container-row">
             <div className="foots flex-container-row">
                 <span>&hearts; &copy; 2021</span>
                 <img alt="JR" className="icons" src="/JRsymbol.png" />
@@ -16,7 +16,7 @@ function Footer() {
                 <a href="http://github.com/jamrod" ><img src="./Octocat.png" alt="github" className="icons" /></a>
                 <a href="http://www.linkedin.com/in/jamescrodgers"><img src="./LI-In-Bug.png" alt="linked in" className="icons" /></a>
             </div>
-        </div>
+        </footer>
     )
 }
 export default Footer
